@@ -1,0 +1,121 @@
+body{
+    background-image: url(photo.jpg);
+    background-size: cover;
+}
+
+#bars i{
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 15px;
+    top: 0px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+#sidebar{
+    position: fixed;
+    left: -300px;
+    top: 0px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#logo{
+    position: absolute;
+    width: 100%;
+    line-height: 62px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#logo a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 30px;
+}
+
+#close i{
+    position: absolute;
+    left: 270px;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#close i{
+    color: white;
+    line-height: 60px;
+    height: 20px;
+}
+
+#menu{
+    position: absolute;
+    top: 90px;
+    width: 100%;
+
+}
+
+#menu ul{
+    position: absolute;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#menu li{
+       padding: 15px;
+       list-style-type: none;
+       color: white;
+    }
+
+#menu li i{
+        padding-right: 8px;
+}
+
+#menu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#menu li:hover{
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 2px 0px 5px rgba(255, 255, 255, 0.1);
+}
+
+#social{
+    position: absolute;
+    bottom: 50px;
+    left: 25px;
+}
+
+#social a{
+    padding: 6px;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    opacity: 0.3;
+}
+
+#social i:hover{
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+#social a:hover{
+
+    opacity: 1;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ #sidebar{
+    left: 0;
+}
